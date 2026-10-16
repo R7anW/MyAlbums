@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<title>Home</title>
+
+<div class="profileHeader">
+    <a href="{{ url_for('routes.login') }}">
+        <img src="\static\images\defaultProfile.png">
+        <p>Hello, {{username}}</p>
+    </a>
+</div>
+
+
+ <h1>AlbumBase</h1>
+
+<input class="albumSearchBar" type="text" placeholder="Search...">
+
+<div class="albumGrid">
+    <div class="albums">
+        <img src="\static\images\albumCovers\chromakopia.jpg">
+        <div class="albumHeading">
+            <h2>CHROMAKOPIA</h2>
+            <p>October 28, 2024</p>
+            <p>Tyler The Creator</p>
+            <p>Hip Hop</p>
+            <p>Tracks: 14</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\AmericanDream.jpeg">
+        <div class="albumHeading">
+            <h2>American Dream</h2>
+            <p>January 12, 2024</p>
+            <p>21 Savage</p>
+            <p>Hip Hop</p>
+            <p>Tracks: 15</p>
+        </div>
+    </div>
+
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\GeminiRights.png">
+        <div class="albumHeading">
+            <h2>Gemini Rights</h2>
+            <p>July 15, 2022</p>
+            <p>Steve Lacy</p>
+            <p>R&B, Funk</p>
+            <p>Tracks: 10</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\AM.png">
+        <div class="albumHeading">
+            <h2>AM</h2>
+            <p>September 6, 2013</p>
+            <p>Arctic Monkeys</p>
+            <p>Indie Rock</p>
+            <p>Tracks: 12</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\Madvillainy.png">
+        <div class="albumHeading">
+            <h2>Madvillainy</h2>
+            <p>	March 23, 2004</p>
+            <p>MF Doom</p>
+            <p>Alternitve Hip Hop</p>
+            <p>Tracks: 22</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\FlowerBoy.png">
+        <div class="albumHeading">
+            <h2>Flower Boy</h2>
+            <p>July 21, 2017</p>
+            <p>Tyler The Creator</p>
+            <p>Hip Hop</p>
+            <p>Tracks: 14</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\Thriller.png">
+        <div class="albumHeading">
+            <h2>Thriller</h2>
+            <p>November 30, 1982</p>
+            <p>Michael Jackson</p>
+            <p>Pop, R&B</p>
+            <p>Tracks: 9</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\TheDarkSideOfTheMoon.png">
+        <div class="albumHeading">
+            <h2>The Dark Side of the Moon</h2>
+            <p>March 1, 1973</p>
+            <p>Pink Floyd</p>
+            <p>Progressive Rock</p>
+            <p>Tracks: 10</p>
+        </div>
+    </div>
+    
+    <div class="albums">
+        <img src="\static\images\albumCovers\TheCollegeDropout.png">
+        <div class="albumHeading">
+            <h2>The College Dropout</h2>
+            <p>February 10, 2004</p>
+            <p>Kanye West</p>
+            <p>Hip Hop</p>
+            <p>Tracks: 21</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\Wolf.jpg">
+        <div class="albumHeading">
+            <h2>Wolf</h2>
+            <p>April 2, 2013</p>
+            <p>Tyler The Creator</p>
+            <p>Alternative hip-hop</p>
+            <p>Tracks: 18</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\CallMeIfYouGetLost.jpg">
+        <div class="albumHeading">
+            <h2>Call Me If You Get Lost</h2>
+            <p>June 25, 2021</p>
+            <p>Tyler The Creator</p>
+            <p>Hip-hop, Jazz</p>
+            <p>Tracks: 16</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\Igor.jpg">
+        <div class="albumHeading">
+            <h2>Igor</h2>
+            <p>May 17, 2019</p>
+            <p>Tyler The Creator</p>
+            <p>Hip-Hop, Funk</p>
+            <p>Tracks: 13</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\LuvIsRage.jpg">
+        <div class="albumHeading">
+            <h2>Luv Is Rage</h2>
+            <p>October 30, 2015</p>
+            <p>Lil Uzi Vert</p>
+            <p>R&B, Trap</p>
+            <p>Tracks: 16</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\LuvIsRage2.jpg">
+        <div class="albumHeading">
+            <h2>Luv Is Rage 2</h2>
+            <p>August 25, 2017</p>
+            <p>Lil Uzi Vert</p>
+            <p>Rap</p>
+            <p>Tracks: 20</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\PinkTape.png">
+        <div class="albumHeading">
+            <h2>Pink Tape</h2>
+            <p>June 30, 2023</p>
+            <p>Lil Uzi Vert</p>
+            <p>Hip-Hop, Trap, Rage, Punk Rap</p>
+            <p>Tracks: 26</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\EternalAtake2.jpg">
+        <div class="albumHeading">
+            <h2>Eternal Atake 2</h2>
+            <p>November 1, 2024</p>
+            <p>Lil Uzi Vert</p>
+            <p>Hip-Hop, Trap</p>
+            <p>Tracks: 16</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\Octane.png">
+        <div class="albumHeading">
+            <h2>Octane</h2>
+            <p>January 30, 2026</p>
+            <p>Don Toliver</p>
+            <p>Alternative hip-hop, trap</p>
+            <p>Tracks: 18</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\XXX.png">
+        <div class="albumHeading">
+            <h2>?</h2>
+            <p>March 16, 2018</p>
+            <p>XXXTentacion</p>
+            <p>Emo rap, alternative R&B</p>
+            <p>Tracks: 18</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\Iceman.jpg">
+        <div class="albumHeading">
+            <h2>Iceman</h2>
+            <p>May 15, 2026</p>
+            <p>Drake</p>
+            <p>Hip Hop</p>
+            <p>Tracks: 18</p>
+        </div>
+    </div>
+
+    <div class="albums">
+        <img src="\static\images\albumCovers\LifeATrip.jpg">
+        <div class="albumHeading">
+            <h2>Life's a Trip</h2>
+            <p>August 10, 2018</p>
+            <p>Trippie Redd</p>
+            <p>Emo rap, Pop Punk</p>
+            <p>Tracks: 14</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script>
+    // Grab the search box and every album card
+    const input = document.querySelector('.albumSearchBar');
+    const albums = document.querySelectorAll('.albums');
+
+    // Run this code every time the user types
+    input.addEventListener('input', () => {
+        // Lowercase so the search is not case sensitive
+        const query = input.value.toLowerCase().trim();
+
+        albums.forEach(album => {
+            // Does any text on the card contain the search term?
+            const matches = album.textContent.toLowerCase().includes(query);
+
+            // Hide the card if it doesn't match
+            album.hidden = !matches;
+        });
+    });
+
+    const grid = document.querySelector('.albumGrid');
+    const cards = Array.from(grid.children);
+
+    // Fisher-Yates shuffle
+    for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+
+    cards.forEach(card => grid.appendChild(card));
+    </script>
+
+{% endblock %}
+

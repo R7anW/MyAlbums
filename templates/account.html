@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %} Account {% endblock %}
+
+{% block content %}
+
+<body>
+
+<a href="{{ url_for('routes.index') }}" class="backHomeButton">
+    <p> < </p>
+</a>
+
+
+<form action="{{ url_for('routes.update_account') }}" method="post">
+    <div class="accountInputs">
+        <h1>Your Account</h1>
+        <p>Username</p>
+        <input type="text" placeholder="{{ user['username'] or '...' }}" name="username">
+        <p>Change email address</p>
+        <input type="email" placeholder="{{ user['email'] or '...' }}" name="email">
+        <p>Change password</p>
+        <input type="password" placeholder="..." name="password" autocomplete="new-password">
+        <button class="submitButton" type="submit">Save changes</button>
+        <a href="{{ url_for('routes.logout') }}" class="logoutButton">Log out</a>
+    </div>
+</form>
+
+</body>
+
+{% endblock %}

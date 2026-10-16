@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+
+<body>
+
+<form action="#" method="post">
+    <div class="loginInputs">
+        <h1 class="loginTitle">Login</h1>
+        <div class="inputBoxes">
+            <p>Email address</p>
+            <input type="email" placeholder="..." name="email">
+            <p>Password</p>
+            <input type="password" placeholder="..." name="password">
+            <input type="submit" value="Submit" name="submitButton"">
+            <p name="registerRedirectText"> Dont have an account? <a href="{{ url_for('routes.register') }}"> Register </a> </p>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
